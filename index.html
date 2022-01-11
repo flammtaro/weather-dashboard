@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="sidebar">
+        <h2 id="search-title">Search for a City:</h2>
+        <div class="search-bar">        
+            <div class="form-group">
+                <input type="search" class="form-control" id="city-search" placeholder="San Diego">
+            </div>
+            <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+        </div>
+        <div class="sidebar-search-buttons">
+            <button type="button" class="btn btn-secondary" id="search-button">Austin</button>
+            <br>
+            <button type="button" class="btn btn-secondary" id="search-button">Chicago</button>
+            <br>
+            <button type="button" class="btn btn-secondary" id="search-button">New York</button>
+            <br>
+            <button type="button" class="btn btn-secondary" id="search-button">Orlando</button>
+            <br>
+            <button type="button" class="btn btn-secondary" id="search-button">San Francisco</button>
+            <br>
+            <button type="button" class="btn btn-secondary" id="search-button">Seattle</button>
+            <br>
+            <button type="button" class="btn btn-secondary" id="search-button">Denver</button>
+            <br>
+            <button type="button" class="btn btn-secondary" id="search-button">Atlanta</button>
+        </div>
+    </div>
+
+    <div class="current-city">
+        <h1>San Francisco</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
