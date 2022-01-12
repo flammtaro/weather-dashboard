@@ -83,7 +83,7 @@ function moreWeatherDetails()
 {
   //API Key to be used in the API url below
   var APIKey = "6071a91aca35893504af7b8555d6a497";
-  apiCall = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat +"&lon=" + lon + "&exclude=&appid=" + APIKey + "&units=imperial";
+  apiCall = "http://api.openweathermap.org/data/2.5/onecall?lat=" + lat +"&lon=" + lon + "&exclude=&appid=" + APIKey + "&units=imperial";
 
   //API Fetch to run the API
   fetch(apiCall)
