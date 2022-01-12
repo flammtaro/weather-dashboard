@@ -19,9 +19,9 @@
         <h2 id="search-title">Search for a City:</h2>
         <div class="search-bar">        
             <div class="form-group">
-                <input type="search" class="form-control" id="city-search" placeholder="San Diego">
+                <input type="search" id="city-search" placeholder="San Diego">
             </div>
-            <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+            <button onclick="searchLocation()" type="button" class="btn btn-primary" id="submit-button">Submit</button>
         </div>
         <div class="sidebar-search-buttons">
             <button type="button" class="btn btn-secondary" id="search-button">Austin</button>
@@ -43,11 +43,11 @@
     </div>
 
     <div class="main">
-        <h1 id="city-header">San Francisco</h1>
+        <h1 id="city-header">San Diego</h1>
         <div class="selected-city-body">
             <p id="city-temp">Temp: 74.01F</p>
             <p id="city-wind">6.67 MPH</p>
-            <p id="city-humidity">Humidty: 46%</p>
+            <p id="city-humidity">Humidity: 46%</p>
             <p id="city-uvindex">UV Index: 0.47</p>
         </div>
     </div>

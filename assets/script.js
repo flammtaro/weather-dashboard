@@ -1,20 +1,30 @@
+var searchText = document.getElementById("city-search");
+var cityHeaderText = document.getElementById("city-header");
 
-var APIKey = "6071a91aca35893504af7b8555d6a497";
-
-var city = ["chicago"];
+var city;
 var state;
 var country;
 
-var requestUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=6071a91aca35893504af7b8555d6a497";
+function searchLocation()
+{
+  city = searchText.value;
+  var APIKey = "6071a91aca35893504af7b8555d6a497";
+  console.log(city);
+   apiURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey; "&units=imperial";
 
-function getApi(requestUrl) {
-    fetch(requestUrl)
-      .then(function (response) {
-        console.log(response);
+  fetch(apiURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
 
-        return response.json();
-    });
-  }
+    cityHeaderText.textContent = data.name;
+    console.log(data);
+  });
+
+}
+
+//  getApi(search);
   
-  getApi(requestUrl);
+
   
