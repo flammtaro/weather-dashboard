@@ -15,16 +15,20 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
+    <!-- Sidebar that includes the search option -->
     <div class="sidenav">
         <h2 id="search-title">Search for a City:</h2>
         <div class="search-bar">        
             <div class="form-group">
+                <!-- Input form for use in searching cities for use in API -->
                 <input type="search" id="city-search" placeholder="San Diego">
             </div>
+            <!-- Submit button to submit the above search results to apply to the API -->
             <button onclick="searchLocation()" type="button" class="btn btn-primary" id="submit-button">Submit</button>
         </div>
+        <!-- Temporary search buttons for other locations - IN PROGRESS -->
         <div class="sidebar-search-buttons">
-            <button type="button" class="btn btn-secondary" id="search-button">Austin</button>
+            <button onclick="austinButton()" type="button" class="btn btn-secondary" id="search-button">Austin</button>
             <br>
             <button type="button" class="btn btn-secondary" id="search-button">Chicago</button>
             <br>
@@ -41,7 +45,7 @@
             <button type="button" class="btn btn-secondary" id="search-button">Atlanta</button>
         </div>
     </div>
-
+    <!-- Main body for the current day weather readings for the searched city -->
     <div class="main">
         <h1 id="city-header">San Diego</h1>
         <div class="selected-city-body">
@@ -51,63 +55,63 @@
             <p id="city-uvindex">UV Index: 0.47</p>
         </div>
     </div>
+    <!-- Section for the 5-day forecast -->
     <div class="five-day-forecast">
         <h3>5-Day Forecast:</h3>
         <div class="row">
             <div class="card-group">
                 <div class="card">
                     <div class="card-body text-left">
-                        <p id="date">3/31/2021</p>
-                        <p id="temp">73.72F</p>
-                        <p id="wind">9.53 MPH</p>
-                        <p id="humidity">66%</p>
+                        <p id="date-one">3/31/2021</p>
+                        <p id="temp-one">73.72°F</p>
+                        <p id="wind-one">9.53 MPH</p>
+                        <p id="humidity-one">66%</p>
                     </div>
                 </div>
             </div>
             <div class="card-group">
                 <div class="card">
                     <div class="card-body text-left">
-                        <p id="date">3/31/2021</p>
-                        <p id="temp">73.72F</p>
-                        <p id="wind">9.53 MPH</p>
-                        <p id="humidity">66%</p>
+                        <p id="date-two">3/31/2021</p>
+                        <p id="temp-two">73.72°F</p>
+                        <p id="wind-two">9.53 MPH</p>
+                        <p id="humidity-two">66%</p>
                     </div>
                 </div>
             </div>
             <div class="card-group">
                 <div class="card">
                     <div class="card-body text-left">
-                        <p id="date">3/31/2021</p>
-                        <p id="temp">73.72F</p>
-                        <p id="wind">9.53 MPH</p>
-                        <p id="humidity">66%</p>
+                        <p id="date-three">3/31/2021</p>
+                        <p id="temp-three">73.72°F</p>
+                        <p id="wind-three">9.53 MPH</p>
+                        <p id="humidity-three">66%</p>
                     </div>
                 </div>
             </div>
             <div class="card-group">
                 <div class="card">
                     <div class="card-body text-left">
-                        <p id="date">3/31/2021</p>
-                        <p id="temp">73.72F</p>
-                        <p id="wind">9.53 MPH</p>
-                        <p id="humidity">66%</p>
+                        <p id="date-four">3/31/2021</p>
+                        <p id="temp-four">73.72°F</p>
+                        <p id="wind-four">9.53 MPH</p>
+                        <p id="humidity-four">66%</p>
                     </div>
                 </div>
             </div>
             <div class="card-group">
                 <div class="card">
                     <div class="card-body text-left">
-                        <p id="date">3/31/2021</p>
-                        <p id="temp">73.72F</p>
-                        <p id="wind">9.53 MPH</p>
-                        <p id="humidity">66%</p>
+                        <p id="date-five">3/31/2021</p>
+                        <p id="temp-five">73.72°F</p>
+                        <p id="wind-five">9.53 MPH</p>
+                        <p id="humidity-five">66%</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
+    <script src="https://kit.fontawesome.com/c79c1b6017.js" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>

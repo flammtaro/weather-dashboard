@@ -5,6 +5,7 @@ header{
     background-image: linear-gradient(rgb(0, 140, 255), blue);
     padding: .25%;
     text-shadow: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .form-group{
@@ -14,7 +15,7 @@ header{
 .sidenav
 {
     width:100%;
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    position: fixed; 
     /* left: 0; */
     padding-left:20px;
     padding-top: 20px;
@@ -26,6 +27,7 @@ header{
     margin-top:2%;
     margin-left:17%;
     padding:5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .five-day-forecast
 {
@@ -35,17 +37,19 @@ header{
 {
     margin: 10px;
     width:175px;
-    
-    /* color:white; */
+    background-color: rgb(45, 68, 87);
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.card-body
-{
-    background-color: rgb(rgb(37, 45, 70));
-}
+
 #search-button
 {
     width:15%;
     margin-top:5px;
+}
+#city-search
+{
+    width:100%;
 }
 #submit-button
 {
