@@ -7,32 +7,50 @@ header{
     text-shadow: 2px;
 }
 
-button{
-    width:15%;
-}
 .form-group{
     width:15%;
 }
-.sidebar
+
+.sidenav
 {
-    padding:50px;
+    width:100%;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    /* left: 0; */
+    padding-left:20px;
+    padding-top: 20px;
 }
-.sidebar-search-buttons
+.main
 {
-    /* border-top: solid; */
-    /* margin-left:45px; */
+    border: 1px solid black;
+    width:50%;
+    margin-top:2%;
+    margin-left:17%;
+    padding:5px;
 }
-.search-bar
+.five-day-forecast
 {
-    margin-left: .25%;
+    margin-left:17%;
 }
-#submit-button
+.card
 {
-    margin-bottom:40px;
+    margin: 10px;
+    width:175px;
+    
+    /* color:white; */
+}
+.card-body
+{
+    background-color: rgb(rgb(37, 45, 70));
 }
 #search-button
 {
-    margin:5px;
+    width:15%;
+    margin-top:5px;
+}
+#submit-button
+{
+    width:15%;
+    margin-bottom:40px;
 }
 #search-title
 {

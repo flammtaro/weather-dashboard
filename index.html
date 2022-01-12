@@ -15,7 +15,7 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-    <div class="sidebar">
+    <div class="sidenav">
         <h2 id="search-title">Search for a City:</h2>
         <div class="search-bar">        
             <div class="form-group">
@@ -42,9 +42,72 @@
         </div>
     </div>
 
-    <div class="current-city">
-        <h1>San Francisco</h1>
+    <div class="main">
+        <h1 id="city-header">San Francisco</h1>
+        <div class="selected-city-body">
+            <p id="city-temp">Temp: 74.01F</p>
+            <p id="city-wind">6.67 MPH</p>
+            <p id="city-humidity">Humidty: 46%</p>
+            <p id="city-uvindex">UV Index: 0.47</p>
+        </div>
     </div>
+    <div class="five-day-forecast">
+        <h3>5-Day Forecast:</h3>
+        <div class="row">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body text-left">
+                        <p id="date">3/31/2021</p>
+                        <p id="temp">73.72F</p>
+                        <p id="wind">9.53 MPH</p>
+                        <p id="humidity">66%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body text-left">
+                        <p id="date">3/31/2021</p>
+                        <p id="temp">73.72F</p>
+                        <p id="wind">9.53 MPH</p>
+                        <p id="humidity">66%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body text-left">
+                        <p id="date">3/31/2021</p>
+                        <p id="temp">73.72F</p>
+                        <p id="wind">9.53 MPH</p>
+                        <p id="humidity">66%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body text-left">
+                        <p id="date">3/31/2021</p>
+                        <p id="temp">73.72F</p>
+                        <p id="wind">9.53 MPH</p>
+                        <p id="humidity">66%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body text-left">
+                        <p id="date">3/31/2021</p>
+                        <p id="temp">73.72F</p>
+                        <p id="wind">9.53 MPH</p>
+                        <p id="humidity">66%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
